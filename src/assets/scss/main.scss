@@ -1,0 +1,10 @@
+@use "base";
+@use "layout";
+@use "module";
+// Using Open props for the css variables https://open-props.style/
+@import "open-props/style";
+@import "open-props/normalize";
+
+html {
+  --brand: var(--green-6);
+}
