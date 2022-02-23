@@ -23,10 +23,10 @@
         <h3>4 Surface Colors</h3>
         <p>Great for cards, buttons, borders, sidenavs, wells, etc. When you want to change the perception of layering and grouping.</p>
         <div class="surface-samples">
-          <div class="surface1">var(--surface-1)</div>
-          <div class="surface2">var(--surface-2)</div>
-          <div class="surface3">var(--surface-3)</div>
-          <div class="surface4">var(--surface-4)</div>
+          <div class="background-surface-1">var(--surface-1)</div>
+          <div class="background-surface-2">var(--surface-2)</div>
+          <div class="background-surface-3">var(--surface-3)</div>
+          <div class="background-surface-4">var(--surface-4)</div>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
     <nav role="navigation">
       <ul>
         <li>
-          <a href="#text">Text</a>
+          <a href="#text" class="text-3">Text</a>
           <ul>
             <li>
               <a href="#text__headings">Headings</a>
@@ -93,7 +93,7 @@
           </ul>
         </li>
         <li>
-          <a href="#embedded">Embedded content</a>
+          <a href="#embedded" class="text-3">Embedded content</a>
           <ul>
             <li>
               <a href="#embedded__images">Images</a>
@@ -122,7 +122,7 @@
           </ul>
         </li>
         <li>
-          <a href="#forms">Form elements</a>
+          <a href="#forms" class="text-3">Form elements</a>
           <ul>
             <li>
               <a href="#forms__input">Input fields</a>

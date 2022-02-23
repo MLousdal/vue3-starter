@@ -7,11 +7,8 @@
   padding-top: var(--size-10);
   text-align: center;
 
-  main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-8);
+  header {
+    justify-items: center;
   }
 
   nav {

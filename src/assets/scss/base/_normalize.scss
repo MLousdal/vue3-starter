@@ -232,6 +232,16 @@ abbr {
   text-decoration-color: var(--blue-5);
 }
 
+table {
+  display: inline-block;
+  overflow: auto;
+  border-spacing: var(--size-2);
+  border-collapse: separate;
+  * {
+    white-space: nowrap;
+  }
+}
+
 html {
   --scrollbar-color: var(--gray-7);
   scrollbar-color: var(--scrollbar-color) transparent;
