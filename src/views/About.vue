@@ -1,4 +1,22 @@
 <script setup>
+import { useHead } from '@vueuse/head'
+import { computed, reactive } from 'vue'
+
+const siteData = reactive({
+  title: `About page`,
+  description: `About page description...`,
+})
+
+useHead({
+  // Can be static or computed
+  title: computed(() => siteData.title),
+  meta: [
+    {
+      name: `description`,
+      content: computed(() => siteData.description),
+    },
+  ],
+})
 </script>
 
 <template>
