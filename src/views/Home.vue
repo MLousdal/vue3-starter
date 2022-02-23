@@ -2,10 +2,12 @@
 </script>
 
 <template>
-  <h1>
-    Home page!
-    <br />
-    <span>Vite + Vue 3 + Router + Vuex</span>
-  </h1>
-  <router-link :to="{ name: 'About' }">About Page</router-link>
+  <main class="wrapper">
+    <header>
+      <h1>Home page!</h1>
+      <p class="text-5">Vite + Vue 3 + Router + Vuex</p>
+    </header>
+    <router-link :to="{ name: 'About' }">About Page</router-link>
+    <button value="button"></button>
+  </main>
 </template>

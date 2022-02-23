@@ -2,14 +2,10 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-sans);
   gap: var(--size-fluid-2);
   justify-content: center;
-  padding-top: var(--size-header-1);
-  margin-inline: auto;
-  max-width: 90rem;
+  padding-top: var(--size-10);
   text-align: center;
-  width: 90%;
 }
 
 img {
@@ -18,5 +14,4 @@ img {
 
 h1 {
   color: var(--brand);
-  max-inline-size: var(--size-30);
 }
