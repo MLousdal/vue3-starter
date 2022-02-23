@@ -1,5 +1,3 @@
-@import "../props.media.css";
-
 :where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"]),
 :where(input[type="file"])::-webkit-file-upload-button,
 :where(input[type="file"])::file-selector-button {

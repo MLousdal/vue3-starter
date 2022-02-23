@@ -1,4 +1,4 @@
-#app {
+.preview {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -6,12 +6,25 @@
   justify-content: center;
   padding-top: var(--size-10);
   text-align: center;
-}
 
-img {
-  width: fit-content;
-}
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--size-8);
+  }
 
-h1 {
-  color: var(--brand);
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-3);
+  }
+
+  img {
+    width: fit-content;
+  }
+
+  h1 {
+    color: var(--brand);
+  }
 }
