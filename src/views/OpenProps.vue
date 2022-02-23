@@ -52,7 +52,7 @@
         <p>The brand color is used sparingly, find it used in the HTML elements below! The link color is useful for buttons and other custom components you want to have consistent interactive text for.</p>
       </div>
       <hr />
-      <h2>Normalized HTML5 Elemenets</h2>
+      <h2>Normalized HTML5 Elements</h2>
       <p>
         Based on
         <a href="https://cbracco.github.io/html5-test-page">this html5 test page</a>.
@@ -518,15 +518,15 @@
               <input id="input__password" type="password" placeholder="Type your Password" />
             </label>
 
-            <label for="input__webaddress">
+            <label for="input__webadresse">
               Web Address
-              <input id="input__webaddress" type="url" placeholder="http://yoursite.com" />
+              <input id="input__webadresse" type="url" placeholder="http://yoursite.com" />
             </label>
 
-            <label for="input__emailaddress">
+            <label for="input__emailadresse">
               Email Address
               <input
-                id="input__emailaddress"
+                id="input__emailadresse"
                 type="email"
                 placeholder="name@email.com"
               />
