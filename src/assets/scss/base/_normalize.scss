@@ -55,6 +55,8 @@ input[type="file"]::-webkit-file-upload-button {
   font-size: inherit;
   color: inherit;
   letter-spacing: inherit;
+  border: 1px solid var(--gray-5);
+  border-radius: var(--radius-2);
 }
 
 input {
@@ -182,9 +184,9 @@ blockquote,
 blockquote {
   display: grid;
   gap: var(--size-3);
+  max-inline-size: var(--size-content-2);
   padding-block: var(--size-3);
   padding-inline: var(--size-4);
-  max-inline-size: var(--size-content-2);
 }
 
 :not(blockquote) > cite {

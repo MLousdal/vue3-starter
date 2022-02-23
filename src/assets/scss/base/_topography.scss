@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   line-height: var(--font-lineheight-1);
-  font-weight: var(--font-weight-9);
+  font-weight: var(--font-weight-7);
 }
 h1 {
   font-size: var(--font-size-7);
@@ -132,70 +132,4 @@ ins {
 mark {
   background-color: var(--color-primary-light);
   color: var(--font-color-inverse);
-}
-
-q {
-  display: inline;
-  quotes: unset;
-
-  &::before {
-    content: open-quote;
-  }
-  &::after {
-    content: close-quote;
-  }
-}
-
-blockquote {
-  display: inline;
-  quotes: unset;
-  border-left: --border-width-thick solid var(--border-dark);
-  padding-left: --layout-spacing;
-
-  p {
-    &::before {
-      content: open-quote;
-    }
-    &::after {
-      content: close-quote;
-    }
-  }
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-u {
-  text-decoration: underline;
-}
-
-address {
-  display: block;
-  font-style: italic;
-}
-
-// Links
-a {
-  font-weight: 700;
-  text-decoration: none;
-  color: inherit;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-    cursor: pointer;
-  }
 }

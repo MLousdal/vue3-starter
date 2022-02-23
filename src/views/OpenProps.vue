@@ -23,29 +23,29 @@
         <h3>4 Surface Colors</h3>
         <p>Great for cards, buttons, borders, sidenavs, wells, etc. When you want to change the perception of layering and grouping.</p>
         <div class="surface-samples">
-          <div class="surface1 rad-shadow">var(--surface-1)</div>
-          <div class="surface2 rad-shadow">var(--surface-2)</div>
-          <div class="surface3 rad-shadow">var(--surface-3)</div>
-          <div class="surface4 rad-shadow">var(--surface-4)</div>
+          <div class="surface1">var(--surface-1)</div>
+          <div class="surface2">var(--surface-2)</div>
+          <div class="surface3">var(--surface-3)</div>
+          <div class="surface4">var(--surface-4)</div>
         </div>
       </div>
 
       <div class="text-samples">
         <h3>2 Text Colors, a brand and a link color</h3>
         <h5 class="text1">
-          <span class="swatch brand rad-shadow"></span>
+          <span class="swatch brand"></span>
           var(--brand)
         </h5>
         <h5 class="text1">
-          <span class="swatch link rad-shadow"></span>
+          <span class="swatch link"></span>
           var(--link)
         </h5>
         <h5 class="text1">
-          <span class="swatch text1 rad-shadow"></span>
+          <span class="swatch text-1"></span>
           var(--text-1)
         </h5>
         <h5 class="text2">
-          <span class="swatch text2 rad-shadow"></span>
+          <span class="swatch text-2"></span>
           var(--text-2)
         </h5>
         <p>Using these props results in colors that adapt to the users system theme preference automatically.</p>
@@ -392,9 +392,9 @@
             </p>
             <p>There is a comment spanning multiple tags and lines below here.</p>
             <!-- <p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
-              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+                 <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
             <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
-          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
         </article>
       </section>
       <section id="embedded">
@@ -496,7 +496,7 @@
             <h2>IFrame</h2>
           </header>
           <div>
-            <iframe src="./index_files/index.html" height="300"></iframe>
+            <iframe src="./openprops" height="300"></iframe>
           </div>
         </article>
       </section>
@@ -507,54 +507,69 @@
         <form>
           <fieldset id="forms__input">
             <legend>Input fields</legend>
-            <p>
-              <label for="input__text">Text Input</label>
+
+            <label for="input__text">
+              Text Input
               <input id="input__text" type="text" placeholder="Text Input" />
-            </p>
-            <p>
-              <label for="input__password">Password</label>
+            </label>
+
+            <label for="input__password">
+              Password
               <input id="input__password" type="password" placeholder="Type your Password" />
-            </p>
-            <p>
-              <label for="input__webaddress">Web Address</label>
+            </label>
+
+            <label for="input__webaddress">
+              Web Address
               <input id="input__webaddress" type="url" placeholder="http://yoursite.com" />
-            </p>
-            <p>
-              <label for="input__emailaddress">Email Address</label>
-              <input id="input__emailaddress" type="email" placeholder="name@email.com" />
-            </p>
-            <p>
-              <label for="input__phone">Phone Number</label>
+            </label>
+
+            <label for="input__emailaddress">
+              Email Address
+              <input
+                id="input__emailaddress"
+                type="email"
+                placeholder="name@email.com"
+              />
+            </label>
+
+            <label for="input__phone">
+              Phone Number
               <input id="input__phone" type="tel" placeholder="(999) 999-9999" />
-            </p>
-            <p>
-              <label for="input__search">Search</label>
+            </label>
+
+            <label for="input__search">
+              Search
               <input id="input__search" type="search" placeholder="Enter Search Term" />
-            </p>
-            <p>
-              <label for="input__text2">Number Input</label>
+            </label>
+
+            <label for="input__text2">
+              Number Input
               <input id="input__text2" type="number" placeholder="Enter a Number" />
-            </p>
-            <p>
-              <label for="input__text3" class="error">Error</label>
+            </label>
+
+            <label for="input__text3" class="error">
+              Error
               <input id="input__text3" class="is-error" type="text" placeholder="Text Input" />
-            </p>
-            <p>
-              <label for="input__text4" class="valid">Valid</label>
+            </label>
+
+            <label for="input__text4" class="valid">
+              Valid
               <input id="input__text4" class="is-valid" type="text" placeholder="Text Input" />
-            </p>
+            </label>
           </fieldset>
           <fieldset id="forms__select">
             <legend>Select menus</legend>
             <p>
-              <label for="select">Select</label>
-              <select id="select">
-                <optgroup label="Option Group">
-                  <option>Option One</option>
-                  <option>Option Two</option>
-                  <option>Option Three</option>
-                </optgroup>
-              </select>
+              <label for="select">
+                Select
+                <select id="select">
+                  <optgroup label="Option Group">
+                    <option>Option One</option>
+                    <option>Option Two</option>
+                    <option>Option Three</option>
+                  </optgroup>
+                </select>
+              </label>
             </p>
           </fieldset>
           <fieldset id="forms__checkbox">
@@ -599,64 +614,72 @@
           </fieldset>
           <fieldset id="forms__textareas">
             <legend>Textareas</legend>
-            <p>
-              <label for="textarea">Textarea</label>
-              <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-            </p>
+
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
           </fieldset>
           <fieldset id="forms__html5">
             <legend>HTML5 inputs</legend>
-            <p>
-              <label for="ic">Color input</label>
+
+            <label for="ic">
+              Color input
               <input id="ic" type="color" value="#000000" />
-            </p>
-            <p>
+            </label>
+            <label>
               File input
               <input type="file" />
-            </p>
-            <p>
-              <label for="in">Number input</label>
+            </label>
+
+            <label for="in">
+              Number input
               <input id="in" type="number" min="0" max="10" value="5" />
-            </p>
-            <p>
-              <label for="ir">Range input</label>
+            </label>
+
+            <label for="ir">
+              Range input
               <input id="ir" type="range" value="10" />
-            </p>
-            <p>
-              <label for="ir">Progress input</label>
+            </label>
+
+            <label for="ir">
+              Progress input
               <progress></progress>
               <progress id="file" max="100" value="70">70%</progress>
-            </p>
-            <p>
-              <label for="idd">Date input</label>
+            </label>
+
+            <label for="idd">
+              Date input
               <input id="idd" type="date" value="1970-01-01" />
-            </p>
-            <p>
-              <label for="idm">Month input</label>
+            </label>
+
+            <label for="idm">
+              Month input
               <input id="idm" type="month" value="1970-01" />
-            </p>
-            <p>
-              <label for="idw">Week input</label>
+            </label>
+
+            <label for="idw">
+              Week input
               <input id="idw" type="week" value="1970-W01" />
-            </p>
-            <p>
-              <label for="idt">Datetime input</label>
+            </label>
+
+            <label for="idt">
+              Datetime input
               <input id="idt" type="datetime" value="1970-01-01T00:00:00Z" />
-            </p>
-            <p>
-              <label for="idtl">Datetime-local input</label>
+            </label>
+
+            <label for="idtl">
+              Datetime-local input
               <input id="idtl" type="datetime-local" value="1970-01-01T00:00" />
-            </p>
+            </label>
           </fieldset>
           <fieldset id="forms__action">
             <legend>Action buttons</legend>
-            <p>
+            <p class="btn-samples">
               <input type="submit" value="&lt;input type=submit&gt;" />
               <input type="button" value="&lt;input type=button&gt;" />
               <input type="reset" value="&lt;input type=reset&gt;" />
               <input type="submit" value="&lt;input disabled&gt;" disabled />
             </p>
-            <p>
+            <p class="btn-samples">
               <button type="submit">&lt;button type=submit&gt;</button>
               <button type="button">&lt;button type=button&gt;</button>
               <button type="reset">&lt;button type=reset&gt;</button>
