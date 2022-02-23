@@ -1,11 +1,26 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from '@/router'
-import store from '@/store'
 import '@/assets/scss/main.scss'
+import ssr from "vite-ssr-vue";
+import App from "./App.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import routes from '@/routes'
+import {createStore} from "vuex";
+import {createHead} from "@vueuse/head";
 
-const app = createApp(App)
+export default ssr(App, {
+    created({app}) {
+      const head = createHead();
+      const router = createRouter({
+        history: createWebHistory(),
+        routes,
+      });
+      const store = createStore();
+      app.use(router);
+      app.use(store);
+      app.use(head, {
+        separator: '-',
+        complement: 'Vite App'
+      });
 
-app.use(router)
-app.use(store)
-app.mount('#app')
+      return {head, router, store}
+    },
+});
