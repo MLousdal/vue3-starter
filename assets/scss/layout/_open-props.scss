@@ -1,7 +1,9 @@
+@use "@/assets/scss/base/media" as *;
+
 .page {
   padding: var(--size-7);
   place-content: center;
-  @media (max-width: 525px) {
+  @media ($md-n-below) {
     & {
       padding: var(--size-1);
     }
@@ -74,7 +76,7 @@ nav > ul {
   list-style-type: none;
   padding-inline-start: 0;
 
-  @media (max-width: 525px) {
+  @media ($md-n-below) {
     & {
       flex-wrap: wrap;
 

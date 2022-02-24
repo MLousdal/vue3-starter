@@ -1,3 +1,5 @@
+@use "@/assets/scss/base/media" as *;
+
 *,
 ::before,
 ::after {
@@ -15,7 +17,7 @@
   }
 }
 
-@media (--motionOK) {
+@media ($motionOK) {
   :focus-visible {
     transition: outline-offset 145ms var(--ease-2);
   }
@@ -248,7 +250,7 @@ html {
   accent-color: var(--brand);
   caret-color: var(--brand);
 
-  @media (--OSlight) {
+  @media ($OSlight) {
     --scrollbar-color: var(--gray-4);
   }
 }

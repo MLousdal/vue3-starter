@@ -1,3 +1,5 @@
+@use "@/assets/scss/base/media" as *;
+
 :root {
   --filter-white: brightness(0) saturate(100%) invert(0%) sepia(11%)
     saturate(7481%) hue-rotate(175deg) brightness(110%) contrast(91%);
@@ -29,13 +31,13 @@
   max-width: 1400px;
   margin-inline: auto;
 
-  @custom-media --md-n-below {
+  @media ($md-n-below) {
     & {
       width: 95%;
     }
   }
 
-  @custom-media --sm-n-below {
+  @media ($sm-n-below) {
     & {
       width: 97%;
     }

@@ -1,4 +1,6 @@
-@media (--OSdark) {
+@use "@/assets/scss/base/media" as *;
+
+@media ($OSdark) {
   html {
     color-scheme: dark;
 
