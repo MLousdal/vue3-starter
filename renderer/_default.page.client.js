@@ -1,5 +1,6 @@
 import { getPage } from 'vite-plugin-ssr/client'
 import { createApp } from './app'
+import { createHead } from '@vueuse/head'
 
 hydrate()
 
@@ -8,5 +9,8 @@ async function hydrate() {
   // instead of `getPage()`, see https://vite-plugin-ssr.com/useClientRouter
   const pageContext = await getPage()
   const app = createApp(pageContext)
+  const head = createHead()
+
+  app.use(head)
   app.mount('#app')
 }

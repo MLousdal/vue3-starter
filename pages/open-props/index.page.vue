@@ -1,3 +1,24 @@
+<script setup>
+import { computed, reactive } from 'vue'
+import { useHead } from '@vueuse/head'
+
+const siteData = reactive({
+  title: `Open props page`,
+  description: `Open props page description`,
+})
+
+useHead({
+  // Can be static or computed
+  title: computed(() => siteData.title),
+  meta: [
+    {
+      name: `description`,
+      content: computed(() => siteData.description),
+    },
+  ],
+})
+</script>
+
 <template>
   <div id="top" class="page" role="document">
     <header role="banner">
